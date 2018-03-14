@@ -1,0 +1,13 @@
+d:\TestProject\TestProject\TestProject\bin\Debug\TestProject.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\TestProject.pdb
+d:\TestProject\TestProject\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
+d:\TestProject\TestProject\TestProject\obj\Debug\TestProject.dll
+d:\TestProject\TestProject\TestProject\obj\Debug\TestProject.pdb
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\UiaComWrapper.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\Interop.UIAutomationClient.dll
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+d:\TestProject\TestProject\TestProject\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
