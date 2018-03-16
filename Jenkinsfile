@@ -3,9 +3,9 @@ node {
   git 'https://github.com/Kgasr/TestProject'
   }
  stage('SonarQube Analysis') {
-  def scannerHome = tool 'SonarQube Scanner 3.0';
+  
   withSonarQubeEnv('sonarqube') {
-   bat "${scannerHome}/bin/sonar-scanner"
+   bat "C:/Users/120054/Documents/SonarQube7/sonar-scanner-3.0.3.778-windows/bin/sonar-scanner"
   }
  }
 }
