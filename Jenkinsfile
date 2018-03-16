@@ -8,4 +8,7 @@ node {
    bat "C:/Users/120054/Documents/SonarQube7/sonar-scanner-3.0.3.778-windows/bin/sonar-scanner"
   }
  }
+ stage('UnitTest') {
+  mstest testResultsFile:"TestProject/Unittest.trx", keepLongStdio: true
+ }
 }
