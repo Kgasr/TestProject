@@ -21,7 +21,7 @@ namespace TestProject
             int output = 0;
             output = objAddAndSubtract.add(a, b);
 
-            Assert.AreEqual("30", output, "Add functionality tested");
+            Assert.AreEqual(30, output, "Add functionality tested");
            
 
         }
@@ -34,7 +34,7 @@ namespace TestProject
 
             int output = 0;
             output = objAddAndSubtract.Subtract(a, b);
-            Assert.AreEqual("10", output, "Sub functionality tested");
+            Assert.AreEqual(10, output, "Sub functionality tested");
         }
     }
 }
