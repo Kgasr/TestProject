@@ -19,8 +19,8 @@ node {
      	stage('JiraBugLog'){
      	withEnv(['JIRA_SITE=LOCAL']){
     		def testIssue = [fields: [ project: [key: 'TESTPROJ1'],
-                           summary: 'New JIRA Created from Jenkins.',
-                           description: 'New JIRA Created from Jenkins.',
+                           summary: 'New JIRA Created from Jenkins for build 1.0.0.${env.BUILD_NUMBER}.',
+                           description: 'New JIRA Created from Jenkins for build 1.0.0.${env.BUILD_NUMBER}.',
                            issuetype: [name: 'Bug']]]
 
 			response = jiraNewIssue issue: testIssue
