@@ -1,5 +1,9 @@
 node {
 
+ stage('CleanUp'){
+	 deleteDir()
+ }
+
  stage('Checkout') {
   		git 'https://github.com/Kgasr/TestProject'
   	}
