@@ -19,8 +19,8 @@ node {
      	stage('JiraBugLog'){
      	withEnv(['JIRA_SITE=LOCAL']){
     		def testIssue = [fields: [ project: [key: 'TESTPROJ1'],
-                           summary: 'New JIRA Created from Jenkins for build 1.0.0.${BUILD_URL}.',
-                           description: 'New JIRA Created from Jenkins for build 1.0.0.${BUILD_URL}.',
+                           summary: 'New JIRA Created from Jenkins.',
+                           description: 'New JIRA Created from Jenkins.',
                            issuetype: [name: 'Bug']]]
 
 			response = jiraNewIssue issue: testIssue
@@ -28,7 +28,7 @@ node {
 			echo response.data.toString()
  	   		}    
 		}
-	  System.exit(-1)
+	  return
    	}
 	 stage('Build'){
   	 bat "\"${tool 'MSBuild'}\" TestProject.sln /p:Configuration=Debug /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
