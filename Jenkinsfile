@@ -1,6 +1,6 @@
 node {
 
- stage('CleanUp Workspace){
+ stage('CleanUp Workspace'){
 	 deleteDir()
  }
 
