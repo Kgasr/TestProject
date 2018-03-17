@@ -16,7 +16,15 @@ node {
     stage('JiraBugLog'){
      echo"test"   
 	    withEnv(['JIRA_SITE=LOCAL']){
-    
+    def testIssue = [fields: [ project: [id: 'TESTPROJ1'],
+                           summary: 'New JIRA Created from Jenkins.',
+                           description: 'New JIRA Created from Jenkins.',
+                           issuetype: [id: '3']]]
+
+response = jiraNewIssue issue: testIssue
+
+echo response.successful.toString()
+echo response.data.toString()
     echo response.successful.toString()
     echo response.data.toString()
 	    }
