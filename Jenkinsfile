@@ -16,7 +16,7 @@ node {
     stage('JiraBugLog'){
      echo"test"   
 	    withEnv(['JIRA_SITE=LOCAL']){
-    def testIssue = [fields: [ project: [id: 'TESTPROJ1'],
+    def testIssue = [fields: [ project: [key: 'TESTPROJ1'],
                            summary: 'New JIRA Created from Jenkins.',
                            description: 'New JIRA Created from Jenkins.',
                            issuetype: [id: '3']]]
